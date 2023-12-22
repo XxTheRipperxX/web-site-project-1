@@ -1,0 +1,252 @@
+body{
+    background-color: #F8F8FE;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/* header section*/
+.div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    margin-right: 60px;
+}
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+header img{
+    margin-top: 40px;
+    margin-left: 60px;
+}
+/*main*/
+main{
+    margin: 30px 60px;
+}
+
+main .container1{
+    display: flex;
+    align-items: center;
+}
+main .container1 img{
+    width: 50%;
+    margin-left: auto;
+}
+main .container1 .textBox{
+    width: 50%;
+}
+main .container1 .textBox h1{
+    font-size:50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+main .container1 .textBox p{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+main .container1 input{
+padding: 10px 15px;
+width: 300px;
+border-radius: 5px;
+}
+main .container1 input:nth-of-type(2){
+    display: inline-block;
+    padding: 10px 50px;
+    transform: translateX(10px);
+    width: 200px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*container 2 section */
+main .container2{
+    display: flex;
+    margin-top: 200px;
+
+}
+body > main > div.container2 > img{
+    width: 50%;
+    margin-left: auto;
+}
+body > main > div.container2 > div > div.link > a{
+    color: #3DA08F;
+    text-decoration: none;
+}
+body > main > div.container2 > div > div.link > img{
+    position: relative;
+    top: 2px;
+}
+.container2 .link{
+    display: flex;
+    position: relative;
+    align-items: center;
+    bottom:40px;
+    gap: 2px;
+}
+.container2 .link {
+    display: inline-block;
+    position: relative;
+    color:#3DA08F ;
+  }
+  
+  .container2 .link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3DA08F;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .container2 .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+main .container2 .miniBox{
+    background-color: white;
+    padding:20px 30px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 5px;
+    width:350px ;
+}
+main .container2 .miniBox .mini{
+    width: 90%;
+    margin: auto;
+}
+main .container2 .textBox2 h1{
+font-size: 43px;
+}
+
+main .container2 .miniBox .mini .flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+body > main > div.container2 > div > div > div > div > img{
+    width: 50px;
+    height:50px ;
+    border-radius: 50%;
+}
+body > main > div.container2 > div > div > div > div > div > p:nth-child(1){
+    margin: 0;
+    font-weight: bold;
+    color: hsl(243, 87%, 12%);
+}
+body > main > div.container2 > div > div > div > div > div > p:nth-child(2){
+    margin: 0;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+/*container 3*/
+footer{
+    background-color:  #575989;
+}
+.container3{
+    margin: 30px 60px  
+}
+footer .container3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    height: 300px;
+}
+footer .container3 .textErea h2{
+    color: white;
+    font-size: 40px
+}
+footer .container3 .textErea p{
+    font-size: 16px;
+    color: white;
+}
+
+footer .container4{
+    background-color: hsl(243, 87%, 12%);
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .container4 .list1 li a , footer .container4 .list2 li a{
+    text-decoration: none;
+    color: white;
+}
+footer .container4 .list1 li , footer .container4 .list2 li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+.container4 .contact1 , .container4 .contact2{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+body > footer > div.container4 > div.photoBox > div.contact1 > svg , body > footer > div.container4 > div.photoBox > div.contact2 > svg{
+    position: relative;
+    right: 10px;
+    top: 1px;
+}
+.container3 input:nth-last-of-type(2){
+    padding: 10px 15px;
+width: 300px;
+border-radius: 5px;
+}
+.container3 input:nth-last-of-type(1){
+    padding: 10px 50px;
+    width: 200px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
